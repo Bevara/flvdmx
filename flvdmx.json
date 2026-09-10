@@ -1,0 +1,16 @@
+{
+    "name": "flvdmx",
+    "description": "FLV demultiplexer",
+    "filters":["flvdmx"],
+    "help": "This filter demultiplexes FLV (Flash Video) files, supporting H.264/H.265 video and AAC/MP3/AAC audio streams.",
+    "support": [
+        "video",
+        "audio"
+    ],
+    "sources":"https://github.com/Bevara/flvdmx",
+    "filter_source":{
+        "flvdmx" : "dmx_flv.c"
+    },
+    "Format":	["FLV"],
+    "licence_required":false
+}
