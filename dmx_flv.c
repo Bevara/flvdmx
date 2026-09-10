@@ -160,8 +160,8 @@ static Bool flvdmx_process_event(GF_Filter *filter, const GF_FilterEvent *evt)
 {
     GF_FLVDMXCtx *ctx = gf_filter_get_udta(filter);
     
-    if (evt->type == GF_FEVT_PLAY_HINT) {
-        if (evt->play_hint.full_file_only == GF_TRUE) {
+    if (evt->base.type == GF_FEVT_PLAY_HINT) {
+        if (evt->play.full_file_only == GF_TRUE) {
             return GF_TRUE;
         }
     }

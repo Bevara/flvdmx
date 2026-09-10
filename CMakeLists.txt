@@ -16,7 +16,6 @@ SET(FLVDMX_SRC
 SET(FLVDMX_INC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
         ${CMAKE_CURRENT_SOURCE_DIR}/lib
-        ${CMAKE_CURRENT_SOURCE_DIR}/../third_parties/libflv/include
 )
 
 add_filter(flvdmx
