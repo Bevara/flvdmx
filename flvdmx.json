@@ -1,16 +1,23 @@
 {
     "name": "flvdmx",
     "description": "FLV demultiplexer",
-    "filters":["flvdmx"],
-    "help": "This filter demultiplexes FLV (Flash Video) files, supporting H.264/H.265 video and AAC/MP3/AAC audio streams.",
+    "filters": [
+        "flvdmx"
+    ],
+    "help": "This filter demultiplexes FLV (Flash Video) files into one pid per stream, with the codec named and the decoder configuration attached: Sorenson H.263 and AVC video, MP3, AAC, G.711 and Speex audio. VP6, Screen Video and Nellymoser have no decoder here and are skipped.",
     "support": [
         "video",
         "audio"
     ],
-    "sources":"https://github.com/Bevara/flvdmx",
-    "filter_source":{
-        "flvdmx" : "dmx_flv.c"
+    "sources": "https://github.com/Bevara/flvdmx",
+    "filter_source": {
+        "flvdmx": "dmx_flv.c"
     },
-    "Format":	["FLV"],
-    "licence_required":false
+    "Format": [
+        "FLV"
+    ],
+    "licence_required": false,
+    "extension": {
+        "flv": "video"
+    }
 }
