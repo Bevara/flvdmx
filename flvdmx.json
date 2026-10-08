@@ -19,5 +19,6 @@
     "licence_required": false,
     "extension": {
         "flv": "video"
-    }
+    },
+    "using": ["solver_minimal_1", "solver_1"]
 }
