@@ -1,5 +1,6 @@
 {
     "name": "flvdmx",
+    "version": "1.0.1",
     "description": "FLV demultiplexer",
     "filters": [
         "flvdmx"
